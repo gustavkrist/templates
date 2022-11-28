@@ -1,0 +1,32 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+  name = Gustav Kristensen
+  email = gustavkrist@gmail.com
+
+[core]
+  pager = delta
+  excludesfile = ~/.gitignore_global
+
+[interactive]
+  diffFilter = delta --color-only --features=interactive
+
+[include]
+  path = ~/.config/delta/themes.gitconfig
+
+[delta]
+  ; features = villsau
+  features = chameleon
+  navigate = true  # use n and N to move between diff sections
+  light = false
+  line-numbers = true
+  hyperlinks = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+[init]
+  defaultBranch = main
